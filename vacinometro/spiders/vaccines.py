@@ -1,5 +1,4 @@
 import re
-
 import scrapy
 
 
@@ -26,10 +25,14 @@ class VaccinesSpider(scrapy.Spider):
                     {f"{shot[-1].lower()}_quantidade": int(shot[0].replace(".", ""))}
                 )
 
+        total = int(total.replace(".", ""))
+        total_vaccinated = int(total_vaccinated.replace(".", ""))
+        total_vaccinated_today = int(total_vaccinated_today.replace(".", ""))
+
         return {
-            "total": int(total.replace(".", "")),
-            "total_de_vacinados": int(total_vaccinated.replace(".", "")),
-            "total_de_vacinados_hoje": int(total_vaccinated_today.replace(".", "")),
+            "total": total,
+            "total_de_vacinados": total_vaccinated,
+            "total_de_vacinados_hoje": total_vaccinated_today,
             "data": last_vaccinated_date,
             "vacinas": vaccines,
         }
