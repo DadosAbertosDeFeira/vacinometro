@@ -2,7 +2,7 @@ name: Daily Scrapper
 on:
   schedule:
     # At the end of every day
-    - cron: '0 0 * * *'
+    - cron: '*/10 * * * *'
 jobs:
   scrap:
     name: Vacinometro Scrapper
@@ -16,10 +16,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install poetry
-        poetry install
+        pip install -r requirements.txt
     - name: Scrap Vacinometro Website
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
         GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-      run: poetry run scrapy crawl vaccines
+      run: scrapy crawl vaccines
