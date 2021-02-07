@@ -1,5 +1,7 @@
 # vacinometro
 
+![Coleta diária](https://github.com/DadosAbertosDeFeira/vacinometro/workflows/Coleta%20di%C3%A1ria/badge.svg)
+
 Coleta dados da vacinação em Feira de Santana 💉
 
 Fonte: http://www.feiradesantana.ba.gov.br/coronavirus/vacinometro/
