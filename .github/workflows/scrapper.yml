@@ -21,4 +21,4 @@ jobs:
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
         GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-      run: GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID GOOGLE_CREDENTIALS=$GOOGLE_CREDENTIALS scrapy crawl vaccines
+      run: scrapy crawl vaccines
