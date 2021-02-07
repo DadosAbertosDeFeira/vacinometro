@@ -4,7 +4,6 @@ import scrapy
 
 class VaccinesSpider(scrapy.Spider):
     name = "vaccines"
-    allowed_domains = ["http://www.feiradesantana.ba.gov.br/coronavirus/vacinometro/"]
     start_urls = ["http://www.feiradesantana.ba.gov.br/coronavirus/vacinometro/"]
 
     def parse(self, response):

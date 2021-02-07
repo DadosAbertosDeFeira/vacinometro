@@ -5,6 +5,4 @@ NEWSPIDER_MODULE = "vacinometro.spiders"
 
 ROBOTSTXT_OBEY = True
 
-ITEM_PIPELINES = {
-    "vacinometro.pipelines.SyncVaccinesDataToGoogleSheetsPipeline": 500
-}
+ITEM_PIPELINES = {"vacinometro.pipelines.SyncVaccinesDataToGoogleSheetsPipeline": 500}
