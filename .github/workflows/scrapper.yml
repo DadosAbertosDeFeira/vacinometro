@@ -1,8 +1,8 @@
 name: Coleta diária
 on:
   schedule:
-    # At the end of every day
-    - cron: '*/10 * * * *'
+    # meia-noite todos os dias
+    - cron: '0 0 * * *'
 jobs:
   scrap:
     name: Raspador do Vacinometro
