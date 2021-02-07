@@ -5,6 +5,7 @@ Coleta dados da vacinação em Feira de Santana 💉
 Fonte: http://www.feiradesantana.ba.gov.br/coronavirus/vacinometro/
 
 Os dados coletados são publicados em uma planilha online (Google Spreadsheets).
+Você pode ter acesso aos dados [aqui](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwd-hIFiW4dYhRQ8PlAvSr9YuYbWzjM5iKu4MBuS2H6PvXq0ubqUzbb60fFWsiLm2eGDbBy8bIE1X2/pub?output=csv).
 
 ## Desenvolvimento
 
